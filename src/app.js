@@ -25,8 +25,29 @@ mongoose
     console.error("Koneksi MongoDB gagal:", error);
   });
 
+// async function uploadFile() {
+//   const bucketName = "bucketcobacoba";
+
+//   const bucket = storage.bucket(bucketName);
+//   await bucket.upload(fileName, {
+//     gzip: true,
+//     metadata: {
+//       cacheControl: "public, max-age=31536000",
+//     },
+//   });
+
+//   console.log(`File ${fileName} berhasil diupload ke bucket ${bucketName}.`);
+// }
+
+// uploadFile().catch(console.error);
+
+//Testing Running App
+app.get("/", (req, res) => {
+  res.send("Hello, World!");
+});
+
 // Jalankan server
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server berjalan di http://localhost:${port}`);
 });

@@ -1,0 +1,7 @@
+runtime: nodejs14
+
+instance_class: F2
+
+env_variables:
+  NODE_ENV: production
+  MONGODB_URI: mongodb+srv://MunzirT:whysos3r!ouS@cluster0.qiex5sk.mongodb.net/
